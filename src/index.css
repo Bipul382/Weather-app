@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  background: linear-gradient(180deg, hsl(53, 67%, 71%), hsl(210, 100%, 75%));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.main {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
+  text-align: center;
+  align-items: center;
+  padding: 80px 150px;
+  @media (max-width: 500px) {
+    padding: 10px;
+    box-shadow: none;
+    font-size: 20px;
+  }
+}
+
+
+
+.loader{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+input{
+  width: 30rem;
+  padding: 20px 20px;
+  margin-top: 20px;
+  outline: none;
+  border-radius: 10px;
+  @media (max-width: 500px) {
+    width: 20rem;
+  }
+}
+input:focus{
+  outline: none;
+}
+input::placeholder{
+  font-size: 20px;
+}
+.weather{
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  @media (max-width: 500px) {
+    display: block;
+    overflow: scroll;
+    justify-content: center;
+    height: 20rem;
+  }
+}
+
+.weather-days{
+   @media (max-width:500px) {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; 
+    }
+}
+
+.weather-days span{
+    font-size: 50px;
+}
+
+
+
